@@ -10,9 +10,10 @@ import thunk from 'redux-thunk'
 import promise from 'redux-promise-middleware'
 
 import sampleReducer from './modules/sample/reducer'
+import counterReducer from './modules/counter/reducer'
 
 const reducers = combineReducers({
-  sampleReducer
+  sampleReducer, counterReducer
 })
 
 const middleware = applyMiddleware(
